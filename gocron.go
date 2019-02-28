@@ -149,7 +149,7 @@ func formatTime(t string) (hour, min int, err error) {
 	return hour, min, nil
 }
 
-//	s.Every(1).Day().At("10:30").Do(task)
+//s.Every(1).Day().At("10:30").Do(task)
 //	s.Every(1).Monday().At("10:30").Do(task)
 func (j *Job) At(t string) *Job {
 	hour, min, err := formatTime(t)
